@@ -8,7 +8,7 @@ specificData <- subset(originalData, as.Date(Date, "%d/%m/%Y") <= as.Date("2007-
 png("plot1.png", width=480, height=480, units="px")
 with(specificData, {
   hist(
-    specificData$Global_active_power,
+    Global_active_power,
     col="red",
     xlab="Global Active Power (kilowatts)",
     ylab="Frequency",

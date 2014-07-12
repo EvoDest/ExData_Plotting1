@@ -9,7 +9,7 @@ png("plot2.png", width=480, height=480, units="px")
 with(specificData, {
   plot(
     strptime(
-      paste(specificData$Date, specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
     specificData$Global_active_power,

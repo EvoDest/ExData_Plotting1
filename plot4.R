@@ -10,10 +10,10 @@ par(mfcol=c(2,2))
 with(specificData, {
   plot(
     strptime(
-      paste(specificData$Date, specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Global_active_power,
+    Global_active_power,
     type="l",
     xlab="",
     ylab="Global Active Power",
@@ -21,10 +21,10 @@ with(specificData, {
   )
   plot(
     strptime(
-      paste(specificData$Date,specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Sub_metering_1,
+    Sub_metering_1,
     type="l",
     xlab="",
     ylab="Energy sub metering",
@@ -32,19 +32,19 @@ with(specificData, {
   )
   lines(
     strptime(
-      paste(specificData$Date,specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Sub_metering_2,
+    Sub_metering_2,
     type="l",
     col="red"
   )
   lines(
     strptime(
-      paste(specificData$Date,specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Sub_metering_3,
+    Sub_metering_3,
     type="l",
     col="blue"
   )
@@ -58,10 +58,10 @@ with(specificData, {
   )
   plot(
     strptime(
-      paste(specificData$Date, specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Voltage,
+    Voltage,
     type="l",
     xlab="datetime",
     ylab="Voltage",
@@ -69,10 +69,10 @@ with(specificData, {
   )
   plot(
     strptime(
-      paste(specificData$Date, specificData$Time),
+      paste(Date, Time),
       format="%d/%m/%Y %H:%M:%S"
     ),
-    specificData$Global_reactive_power,
+    Global_reactive_power,
     type="l",
     xlab="datetime",
     ylab="Global_reactive_power",
